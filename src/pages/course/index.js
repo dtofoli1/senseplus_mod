@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 
-class Category extends Component {
+class Course extends Component {
 	componentWillMount() {
 		document.body.style = "background: white;";
 	}
@@ -18,42 +18,42 @@ class Category extends Component {
 		return (
 			<div>
 				<div className="NavMenu">
-					<NavMenu text={"Categoria"} />
+					<NavMenu text={"Treinamentos"} />
 				</div>
 				<div className="Buttons">
 					<Container className="mt-3" fluid>
 						<Row>
 							<Col xs={6} className="pl-2">
-								<Button
-									className="p-0"
-									size="lg"
-									href="#category"
-									style={{
-										backgroundColor: "#FFD522",
-										color: "black",
-										fontSize: "1em",
-									}}
-									block
-								>
-									Categoria
-								</Button>
-							</Col>
-							<Col xs={6} className="pr-2">
-								<Link to="/course">
+								<Link to="/categoria">
 									<Button
 										className="p-0"
 										size="lg"
-										href="#Treinamentos"
+										href="#category"
 										style={{
-											backgroundColor: "black",
-											color: "white",
+											backgroundColor: "#FFD522",
+											color: "black",
 											fontSize: "1em",
 										}}
 										block
 									>
-										Treinamentos
+										Categoria
 									</Button>
 								</Link>
+							</Col>
+							<Col xs={6} className="pr-2">
+								<Button
+									className="p-0"
+									size="lg"
+									href="#Treinamentos"
+									style={{
+										backgroundColor: "black",
+										color: "white",
+										fontSize: "1em",
+									}}
+									block
+								>
+									Treinamentos
+								</Button>
 							</Col>
 						</Row>
 						<Row>
@@ -154,4 +154,4 @@ class Category extends Component {
 	}
 }
 
-export default Category;
+export default Course;
