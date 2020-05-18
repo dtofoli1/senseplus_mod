@@ -1,14 +1,12 @@
 import React, { Component } from "react";
+import Item from "../../components/item";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import NavMenu from "../../components/nav";
-import Placeholder from "./img_placeholder.png";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Image from "react-bootstrap/Image";
 
 class Category extends Component {
 	componentWillMount() {
@@ -75,78 +73,9 @@ class Category extends Component {
 				</div>
 				<div className="Content">
 					<Container className="mt-4" fluid>
-						<Card className="mt-2">
-							<Row className="mt-2">
-								<Col className="col-4">
-									<Image src={Placeholder} fluid></Image>
-								</Col>
-								<Col>
-									Titulo em até duas linhas...
-									<Row>
-										<Button
-											className="ml-3 mt-3"
-											style={{ backgroundColor: "#FF0000" }}
-										>
-											Excluir
-										</Button>
-									</Row>
-								</Col>
-							</Row>
-						</Card>
-						<Card className="mt-2">
-							<Row className="mt-2">
-								<Col className="col-4">
-									<Image src={Placeholder} fluid></Image>
-								</Col>
-								<Col>
-									Titulo em até duas linhas...
-									<Row>
-										<Button
-											className="ml-3 mt-3"
-											style={{ backgroundColor: "#FF0000" }}
-										>
-											Excluir
-										</Button>
-									</Row>
-								</Col>
-							</Row>
-						</Card>
-						<Card className="mt-2">
-							<Row className="mt-2">
-								<Col className="col-4">
-									<Image src={Placeholder} fluid></Image>
-								</Col>
-								<Col>
-									Titulo em até duas linhas...
-									<Row>
-										<Button
-											className="ml-3 mt-3"
-											style={{ backgroundColor: "#FF0000" }}
-										>
-											Excluir
-										</Button>
-									</Row>
-								</Col>
-							</Row>
-						</Card>
-						<Card className="mt-2">
-							<Row className="mt-2">
-								<Col className="col-4">
-									<Image src={Placeholder} fluid></Image>
-								</Col>
-								<Col>
-									Titulo em até duas linhas...
-									<Row>
-										<Button
-											className="ml-3 mt-3"
-											style={{ backgroundColor: "#FF0000" }}
-										>
-											Excluir
-										</Button>
-									</Row>
-								</Col>
-							</Row>
-						</Card>
+						<Item />
+						<Item />
+						<Item />
 					</Container>
 				</div>
 			</div>
