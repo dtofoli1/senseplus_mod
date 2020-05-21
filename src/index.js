@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./styles.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoginScreen from "./pages/login";
 import Category from "./pages/category";
