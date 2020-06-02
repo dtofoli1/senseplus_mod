@@ -18,66 +18,62 @@ class Course extends Component {
 				<div className="NavMenu">
 					<NavMenu text={"Treinamentos"} />
 				</div>
-				<div className="Buttons">
-					<Container className="mt-3" fluid>
-						<Row>
-							<Col xs={6} className="pl-2">
-								<Link to="/categoria">
-									<Button
-										className="p-0"
-										size="lg"
-										href="#category"
-										style={{
-											backgroundColor: "#FFD522",
-											color: "black",
-											fontSize: "1em",
-										}}
-										block
-									>
-										Categoria
-									</Button>
-								</Link>
-							</Col>
-							<Col xs={6} className="pr-2">
+				<Container className="mt-3 col-md-6" fluid>
+					<Row>
+						<Col xs={6} className="pl-2">
+							<Link to="/categoria">
 								<Button
 									className="p-0"
 									size="lg"
-									href="#Treinamentos"
+									href="#category"
 									style={{
-										backgroundColor: "black",
-										color: "white",
+										backgroundColor: "#FFD522",
+										color: "black",
 										fontSize: "1em",
 									}}
 									block
 								>
-									Treinamentos
+									Categoria
 								</Button>
-							</Col>
-						</Row>
-						<Row>
+							</Link>
+						</Col>
+						<Col xs={6} className="pr-2">
 							<Button
-								className="p-0 mt-1 ml-2 mr-2"
+								className="p-0"
 								size="lg"
-								href="#NovoTreinamento"
+								href="#Treinamentos"
 								style={{
-									backgroundColor: "#38B71B",
-									color: "black",
+									backgroundColor: "black",
+									color: "white",
 									fontSize: "1em",
 								}}
 								block
 							>
-								Nova Categoria
+								Treinamentos
 							</Button>
-						</Row>
-					</Container>
-				</div>
-				<div className="Content">
-					<Container className="mt-4" fluid>
-						<Item />
-						<Item />
-						<Item />
-					</Container>
-				</div>
+						</Col>
+					</Row>
+					<Row>
+						<Button
+							className="p-0 mt-1 ml-2 mr-2"
+							size="lg"
+							href="#NovoTreinamento"
+							style={{
+								backgroundColor: "#38B71B",
+								color: "black",
+								fontSize: "1em",
+							}}
+							block
+						>
+							Nova Categoria
+						</Button>
+					</Row>
+				</Container>
+				<Container className="mt-4 col-md-6" fluid>
+					<Item />
+					<Item />
+					<Item />
+				</Container>
 			</div>
 		);
 	}
