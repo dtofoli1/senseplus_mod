@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Placeholder from "../../components/img_placeholder.png";
 //import { Link } from "react-router-dom";
-import NavMenu from "../../components/nav";
+import NavMenu from "../../components/nav.js";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 //import Row from "react-bootstrap/Row";
@@ -9,28 +9,45 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 
-class addCategory extends Component {
+class AddCategory extends Component {
 	render() {
 		return (
 			<div>
-				<div>
+				<div className="NavMenu">
 					<NavMenu text={"Nova Categoria"} />
 				</div>
-				<Container fluid>
-					<Image className=" col-sm-7 col-md-6 mt-2" src={Placeholder} fluid />
-					<Form className="mt-5">
-						<Form.Group controldId="newCatName">
-							<Form.Control type="text" placeholder="Nome da categoria" />
-						</Form.Group>
-						<Form.Group controlId="newCatDescription">
+				<Container className="col-11 col-md-8 mt-4" fluid>
+					<Image
+						style={{ width: "60%", height: "75%" }}
+						src={Placeholder}
+						fluid
+					/>
+					<Form className="mt-3">
+						<Form.Group controldid="newCatName">
 							<Form.Control
+								className="rounded"
+								type="text"
+								placeholder="Nome da categoria"
+							/>
+						</Form.Group>
+						<Form.Group controldid="newCatDescription">
+							<Form.Control
+								className="mt-3"
 								as="textarea"
-								rows="5"
+								rows="7"
 								type="text"
 								placeholder="Descrição"
 							/>
 						</Form.Group>
-						<Button variant="success" className="mr-auto">
+						<Button
+							style={{
+								backgroundColor: "#38B71B",
+								color: "black",
+								fontWeight: "bold",
+								fontSize: "1em",
+							}}
+							className="col-12 pb-2 border-light"
+						>
 							SALVAR
 						</Button>
 					</Form>
@@ -39,3 +56,5 @@ class addCategory extends Component {
 		);
 	}
 }
+
+export default AddCategory;

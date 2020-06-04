@@ -26,7 +26,7 @@ class loginScreen extends Component {
 						<Form.Group controlId="formBasicPassword">
 							<Form.Control type="password" placeholder="Senha" />
 						</Form.Group>
-						<Link to="/categoria">
+						<Link to="/category">
 							<Button variant="warning" type="submit" className="mr-auto">
 								Login
 							</Button>

@@ -5,13 +5,17 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoginScreen from "./pages/login";
 import Category from "./pages/category";
 import Course from "./pages/course";
+import AddCourse from "./pages/course/add";
+import AddCategory from "./pages/category/add";
 
 ReactDOM.render(
 	<BrowserRouter>
 		<Switch>
-			<Route path="/" exact={true} component={LoginScreen} />
-			<Route path="/categoria" exact={true} component={Category} />
-			<Route path="/course" exact={true} component={Course} />
+			<Route path="/" exact component={LoginScreen} />
+			<Route path="/category" component={Category} />
+			<Route path="/course" component={Course} />
+			<Route path="/add" component={AddCourse} />
+			<Route path="/add2" component={AddCategory} />
 		</Switch>
 	</BrowserRouter>,
 	document.getElementById("root")
