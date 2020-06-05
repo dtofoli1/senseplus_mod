@@ -22,16 +22,6 @@ const LinkButton = (props) => {
 				onClick && onClick(event);
 				history.push(to);
 			}}
-			id="changeBtn"
-			className="p-0 mt-1 ml-2 mr-2"
-			size="lg"
-			style={{
-				backgroundColor: "#38B71B",
-				color: "black",
-				fontSize: "1em",
-				fontWeight: "bold",
-			}}
-			block
 		>
 			{name}
 		</Button>

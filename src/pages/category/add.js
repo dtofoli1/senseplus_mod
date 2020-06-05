@@ -18,7 +18,7 @@ class AddCategory extends Component {
 				</div>
 				<Container className="col-11 col-md-8 mt-4" fluid>
 					<Image
-						style={{ width: "60%", height: "75%" }}
+						style={{ width: "40%", height: "75%" }}
 						src={Placeholder}
 						fluid
 					/>

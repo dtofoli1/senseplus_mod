@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import LinkButton from "../../components/LinkButton";
 import Item from "../../components/item";
 import "./styles.css";
-import { Link } from "react-router-dom";
 import NavMenu from "../../components/nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -38,26 +37,39 @@ class Category extends Component {
 							</Button>
 						</Col>
 						<Col xs={6} className="pr-2">
-							<Link to="/course">
-								<Button
-									className="p-0"
-									size="lg"
-									href="#Treinamentos"
-									style={{
-										backgroundColor: "black",
-										color: "white",
-										fontSize: "1em",
-										fontWeight: "599",
-									}}
-									block
-								>
-									Treinamentos
-								</Button>
-							</Link>
+							<LinkButton
+								to="/course"
+								name="Treinamentos"
+								className="p-0"
+								size="lg"
+								href="#Treinamentos"
+								style={{
+									backgroundColor: "black",
+									color: "white",
+									fontSize: "1em",
+									fontWeight: "599",
+								}}
+								block
+							>
+								Treinamentos
+							</LinkButton>
 						</Col>
 					</Row>
 					<Row>
-						<LinkButton to="/add2" name="Nova Categoria" />
+						<LinkButton
+							id="changeBtn"
+							className="p-0 mt-1 ml-2 mr-2"
+							size="lg"
+							style={{
+								backgroundColor: "#38B71B",
+								color: "black",
+								fontSize: "1em",
+								fontWeight: "bold",
+							}}
+							block
+							to="/add2"
+							name="Nova Categoria"
+						/>
 					</Row>
 				</Container>
 				<Container className="mt-4 col-md-8" fluid>

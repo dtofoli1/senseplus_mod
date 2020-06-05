@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import LinkButton from "../../components/LinkButton";
 import Item from "../../components/item";
 import "./styles.css";
-import { Link } from "react-router-dom";
 import NavMenu from "../../components/nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -22,22 +21,20 @@ class Course extends Component {
 				<Container className="mt-3 col-md-8" fluid>
 					<Row>
 						<Col xs={6} className="pl-2">
-							<Link to="/category">
-								<Button
-									className="p-0"
-									size="lg"
-									href="#category"
-									style={{
-										backgroundColor: "#FFD522",
-										color: "black",
-										fontSize: "1em",
-										fontWeight: "bold",
-									}}
-									block
-								>
-									Categoria
-								</Button>
-							</Link>
+							<LinkButton
+								to="/category"
+								name="Categoria"
+								className="p-0"
+								size="lg"
+								href="#category"
+								style={{
+									backgroundColor: "#FFD522",
+									color: "black",
+									fontSize: "1em",
+									fontWeight: "bold",
+								}}
+								block
+							></LinkButton>
 						</Col>
 						<Col xs={6} className="pr-2">
 							<Button
@@ -57,7 +54,20 @@ class Course extends Component {
 						</Col>
 					</Row>
 					<Row>
-						<LinkButton to="/add" name="Novo Treinamento" />
+						<LinkButton
+							id="changeBtn"
+							className="p-0 mt-1 ml-2 mr-2"
+							size="lg"
+							style={{
+								backgroundColor: "#38B71B",
+								color: "black",
+								fontSize: "1em",
+								fontWeight: "bold",
+							}}
+							block
+							to="/add"
+							name="Novo Treinamento"
+						/>
 					</Row>
 				</Container>
 				<Container className="mt-4 col-md-8" fluid>

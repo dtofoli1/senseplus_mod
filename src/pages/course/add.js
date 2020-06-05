@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import Placeholder from "../../components/img_placeholder.png";
 import UploadIcon from "./upload_icon.png";
-//import { Link } from "react-router-dom";
 import NavMenu from "../../components/nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-//import Row from "react-bootstrap/Row";
-//import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
-
-//IMPORTANTE - TROCAR FORM DE ENVIO!
 
 class AddCourse extends Component {
 	render() {
@@ -28,11 +23,21 @@ class AddCourse extends Component {
 							<option>Categoria 4</option>
 							<option>Categoria 5</option>
 						</Form.Control>
-						<Image className="mt-2" src={Placeholder} fluid />
-						<Form.Group className="mt-2" controldId="newCourseName">
+						<div className="text-center">
+							<Image
+								className="mt-2"
+								style={{
+									width: "45%",
+									height: "75%",
+								}}
+								src={Placeholder}
+								fluid
+							/>
+						</div>
+						<Form.Group className="mt-2" controldid="newCourseName">
 							<Form.Control type="text" placeholder="Nome do treinamento" />
 						</Form.Group>
-						<Form.Group controlId="newCatDescription">
+						<Form.Group controlid="newCatDescription">
 							<Form.Control
 								as="textarea"
 								rows="7"
@@ -42,13 +47,13 @@ class AddCourse extends Component {
 						</Form.Group>
 						<Form.Group>
 							<Form.File isValid>
-								<Image className="mr-3" src={UploadIcon} />
+								<Image className="mr-1 mr-lg-3 mr-md-0" src={UploadIcon} />
 								<Button
-									className="col-10 col-md-11 ml-3"
+									className="col-10 col-lg-11 col-md-11"
 									style={{
 										backgroundColor: "black",
 										color: "white",
-										fontWeight: "bold",
+										fontWeight: "590",
 										fontSize: "1em",
 									}}
 								>
