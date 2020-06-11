@@ -10,6 +10,28 @@ import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 
 class AddCategory extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			selectedFile: null,
+		};
+	}
+
+	fileSelectedHandler = (event) => {
+		console.log(event.target.files[0]);
+		this.setState(
+			{
+				selectedFile: event.target.files[0],
+			},
+			() => this.fileUploadHandler()
+		);
+	};
+
+	fileUploadHandler = () => {
+		/* file upload triggered */
+		console.log("file upload triggered");
+	};
+
 	render() {
 		return (
 			<div>
@@ -17,11 +39,21 @@ class AddCategory extends Component {
 					<NavMenu text={"Nova Categoria"} />
 				</div>
 				<Container className="col-11 col-md-8 mt-4" fluid>
-					<Image
-						style={{ width: "40%", height: "75%" }}
-						src={Placeholder}
-						fluid
-					/>
+					<div className="text-center">
+						<label htmlFor="uploadImage">
+							<Image
+								style={{ width: "40%", height: "75%" }}
+								src={Placeholder}
+								fluid
+							/>
+						</label>
+						<input
+							id="uploadImage"
+							style={{ display: "none" }}
+							type={"file"}
+							onChange={this.fileSelectedHandler}
+						/>
+					</div>
 					<Form className="mt-3">
 						<Form.Group controldid="newCatName">
 							<Form.Control
