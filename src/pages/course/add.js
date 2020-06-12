@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Placeholder from "../../components/img_placeholder.png";
+import Placeholder from "../../assets/img_placeholder.png";
 //import UploadIcon from "./upload_icon.png";
 import NavMenu from "../../components/nav";
 import Container from "react-bootstrap/Container";

@@ -20,32 +20,32 @@ class Course extends Component {
 				</div>
 				<Container className="mt-3 col-md-8" fluid>
 					<Row>
-						<Col xs={6} className="pl-2">
+						<Col xs={6} className="pl-0 pr-0">
 							<LinkButton
 								to="/category"
 								name="Categoria"
-								className="p-0"
+								className="pt-1 pb-1"
 								size="lg"
 								href="#category"
 								style={{
-									backgroundColor: "#FFD522",
-									color: "black",
-									fontSize: "1em",
-									fontWeight: "bold",
+									backgroundColor: "black",
+									color: "white",
+									fontSize: "0.85em",
+									fontWeight: "599",
 								}}
 								block
 							></LinkButton>
 						</Col>
-						<Col xs={6} className="pr-2">
+						<Col xs={6} className="pl-0 pr-0">
 							<Button
-								className="p-0"
+								className="pt-1 pb-1"
 								size="lg"
 								href="#Treinamentos"
 								style={{
-									backgroundColor: "black",
-									color: "white",
-									fontSize: "1em",
-									fontWeight: "599",
+									backgroundColor: "#FFD522",
+									color: "black",
+									fontSize: "0.85em",
+									fontWeight: "bold",
 								}}
 								block
 							>
@@ -56,7 +56,7 @@ class Course extends Component {
 					<Row>
 						<LinkButton
 							id="changeBtn"
-							className="p-0 mt-1 ml-2 mr-2"
+							className="p-0 mt-1"
 							size="lg"
 							style={{
 								backgroundColor: "#38B71B",

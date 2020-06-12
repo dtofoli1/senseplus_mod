@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Signs from "./signs.svg";
-import Search from "./search.svg";
+import Signs from "../assets/signs.svg";
+import Search from "../assets/search.svg";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";

@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import Placeholder from "../../components/img_placeholder.png";
-//import { Link } from "react-router-dom";
+import Placeholder from "../../assets/img_placeholder.png";
 import NavMenu from "../../components/nav.js";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-//import Row from "react-bootstrap/Row";
-//import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 

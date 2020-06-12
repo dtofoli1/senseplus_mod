@@ -1,4 +1,4 @@
-import Placeholder from "./img_placeholder.png";
+import Placeholder from "../assets/img_placeholder.png";
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
