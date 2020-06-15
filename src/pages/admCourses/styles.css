@@ -1,0 +1,17 @@
+.NavMenu {
+	background-color: black;
+	color: white;
+}
+
+.Buttons {
+	color: black;
+	justify-content: center;
+}
+
+.Content {
+	color: black;
+}
+
+#tableHeaders {
+	font-size: 0.85em;
+}

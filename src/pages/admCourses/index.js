@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import LinkButton from "../../components/LinkButton";
-import UserCard from "../../components/UserCard";
+import AdmItem from "../../components/admItem";
 import "./styles.css";
 import NavMenu from "../../components/nav";
 import Container from "react-bootstrap/Container";
+//import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-class AdmUsers extends Component {
+class AdmCourse extends Component {
 	componentDidMount() {
 		document.body.style = "background: white;";
 	}
@@ -15,21 +16,21 @@ class AdmUsers extends Component {
 		return (
 			<div>
 				<div className="NavMenu">
-					<NavMenu text={"Usuário"} />
+					<NavMenu text={"Treinamentos"} />
 				</div>
 				<Container id="buttonsPanel" className="mt-3 col-md-8" fluid>
 					<Row>
 						<Col xs={4} className="px-0">
 							<LinkButton
-								to="#"
+								to="/adm_users"
 								name="Usuários"
 								className="py-1"
 								size="lg"
 								style={{
-									backgroundColor: "#FFD522",
-									color: "black",
+									backgroundColor: "black",
+									color: "white",
 									fontSize: "0.85em",
-									fontWeight: "bold",
+									fontWeight: "599",
 								}}
 								block
 							></LinkButton>
@@ -54,15 +55,15 @@ class AdmUsers extends Component {
 						</Col>
 						<Col xs={4} className="px-0">
 							<LinkButton
-								to="/adm_courses"
+								to="#"
 								name="Treinamentos"
 								className="py-1"
 								size="lg"
 								style={{
-									backgroundColor: "black",
-									color: "white",
+									backgroundColor: "#FFD522",
+									color: "black",
 									fontSize: "0.85em",
-									fontWeight: "599",
+									fontWeight: "bold",
 									textAlign: "center",
 									textJustify: "none",
 								}}
@@ -71,12 +72,12 @@ class AdmUsers extends Component {
 						</Col>
 					</Row>
 				</Container>
-				<Container id="contentPanel" className="mt-4 col-md-8" fluid>
-					<UserCard />
+				<Container className="mt-4 col-md-8" fluid>
+					<AdmItem />
 				</Container>
 			</div>
 		);
 	}
 }
 
-export default AdmUsers;
+export default AdmCourse;
