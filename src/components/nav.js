@@ -18,13 +18,13 @@ class NavMenu extends Component {
 		return (
 			<div>
 				<Nav className="pb-2 pt-3">
-					<NavLink to="/" href="#logout" className="pl-2 col-4 p-0 m-0">
+					<NavLink to="/" className="pl-2 col-4 p-0 m-0">
 						<Image src={Signs} className="float-left" fluid></Image>
 					</NavLink>
 					<Navbar.Brand className="col-4 p-0 mx-0 mb-1 text-center">
 						{this.props.text}
 					</Navbar.Brand>
-					<NavLink to="/search" href="#search" className="pr-2 col-4 p-0 m-0">
+					<NavLink to="/adm_users" className="pr-2 col-4 p-0 m-0">
 						<Image src={Search} className="float-right" fluid></Image>
 					</NavLink>
 				</Nav>

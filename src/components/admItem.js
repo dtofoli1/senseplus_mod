@@ -12,7 +12,7 @@ class AdmItem extends Component {
 		return (
 			<Card className="mt-2">
 				<Row className="mt-2">
-					<Col className="col-4">
+					<Col className="col-4 col-md-2">
 						<Image src={Placeholder} fluid></Image>
 					</Col>
 					<Col>

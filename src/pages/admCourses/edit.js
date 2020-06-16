@@ -69,9 +69,38 @@ class EditCourse extends Component {
 						</Col>
 					</Row>
 				</Container>
-				<AdmItem />
-				<div className="ml-2 mt-2 mb-2">Usuários cadastrados</div>
-				<AdmUserCard />
+				<div className="ml-md-4 mt-2 mb-2">
+					<AdmItem />
+					<Col className="mt-2" style={{ fontSize: "0.90em" }}>
+						<Row>
+							<b>Objetivo da Aula</b>
+							<br />
+						</Row>
+						<Row className="mt-2">
+							Lorem ipsum dolr sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna alique. Ut
+							enim ad minim veniam
+						</Row>
+						<Row>
+							<span className="mt-2 mr-5">
+								<b>Duração</b>
+								<br />
+								8 horas 15 min 42 sec
+								<br />
+							</span>
+							<span className="mt-2 ml-5">
+								<b>Pontuação</b>
+								<br />
+								568 pts
+								<br />
+							</span>
+						</Row>
+					</Col>
+				</div>
+				<div className="mt-3 ml-md-4">
+					<b>Usuários cadastrados</b>
+					<AdmUserCard />
+				</div>
 			</div>
 		);
 	}
